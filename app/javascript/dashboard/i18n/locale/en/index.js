@@ -75,5 +75,5 @@ export default {
   ...sla,
   ...teamsSettings,
   ...whatsappTemplates,
-  ...penguinDashboard,
+  penguin_dashboard: penguinDashboard,
 };
