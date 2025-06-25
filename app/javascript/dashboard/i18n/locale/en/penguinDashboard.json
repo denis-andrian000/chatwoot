@@ -1,0 +1,49 @@
+    {
+      "overview_title": "Penguin Dashboard Overview",
+      "ai_service_mgmt": {
+        "title": "AI Middleware Service Management",
+        "status_label": "Service Status",
+        "refreshing_status": "Refreshing...",
+        "refresh_status": "Refresh Status",
+        "restarting_service": "Restarting...",
+        "restart_service": "Restart Service",
+        "restart_note": "Note: Restarting the AI service is required for .env changes to take effect.",
+        "confirm_restart_title": "Confirm AI Service Restart",
+        "confirm_restart_message": "Are you sure you want to restart the AI service? This will temporarily stop the AI bot.",
+        "cancel_button": "Cancel",
+        "confirm_button": "Confirm",
+        "status_refreshed": "AI service status refreshed.",
+        "status_load_failed": "Failed to load AI service status: {message}",
+        "restart_failed": "Failed to restart AI service: {message}",
+        "restart_cancelled": "AI service restart cancelled."
+      },
+      "prompt_editor": {
+        "title": "AI System Prompt Editor",
+        "placeholder": "Click 'Refresh Prompt' to fetch content...",
+        "loading_prompt": "Loading...",
+        "refresh_prompt": "Refresh Prompt",
+        "saving_prompt": "Saving...",
+        "save_prompt": "Save Prompt",
+        "loaded_success": "Prompt loaded successfully!",
+        "load_failed": "Failed to load prompt: {message}",
+        "load_error_fallback": "Error loading prompt. Please check server logs.",
+        "saved_success": "Prompt saved successfully!"
+      },
+      "env_editor": {
+        "title": "AI Environment Variables",
+        "skip_if_agent_online": "Skip Reply if Agent Online",
+        "bot_reset_status": "Bot Reset Status to 'Open' After Reply",
+        "enable_follow_up": "Enable Follow-up Messages",
+        "follow_up_delay_minutes": "Follow-up Delay (minutes)",
+        "enable_close_ticket": "Enable Automatic Ticket Closing",
+        "close_ticket_delay_minutes": "Close Ticket Delay (minutes)",
+        "handover_agent": "Enable Automatic Handover to Agent",
+        "loading_config": "Loading...",
+        "refresh_config": "Refresh Config",
+        "saving_config": "Saving...",
+        "save_config": "Save ENV Config",
+        "loaded_success": "Environment variables loaded successfully!",
+        "load_failed": "Failed to load ENV config: {message}",
+        "saved_success": "Environment variables saved successfully! Remember to restart AI Service for changes to take full effect."
+      }
+    }

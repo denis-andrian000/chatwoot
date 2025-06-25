@@ -10,6 +10,7 @@ import campaignsRoutes from './campaigns/campaigns.routes';
 import { routes as captainRoutes } from './captain/captain.routes';
 import AppContainer from './Dashboard.vue';
 import Suspended from './suspended/Index.vue';
+import PenguinDashboard from '../../modules/penguinDashboard/PenguinDashboard.vue';
 
 export default {
   routes: [
@@ -26,6 +27,19 @@ export default {
         ...notificationRoutes,
         ...helpcenterRoutes.routes,
         ...campaignsRoutes.routes,
+        // Your new route definition
+        {
+          path: 'penguin-dashboard',
+          name: 'penguin_dashboard',
+          component: PenguinDashboard,
+          props: true,
+          meta: {
+            analytics: true,
+            showSidebar: true,
+            permissions: ['administrator', 'agent'],
+          },
+        },
+        // Your new route definition
       ],
     },
     {

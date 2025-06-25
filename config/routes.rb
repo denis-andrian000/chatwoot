@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  # --- START: Your Custom API Routes ---
+  get '/custom_api/system_prompt', to: 'custom_api/system_prompts#show'
+  post '/custom_api/system_prompt', to: 'custom_api/system_prompts#update'
+
+  # Routes for ENV Config
+  get '/custom_api/env_config', to: 'custom_api/system_prompts#show_env_config'
+  post '/custom_api/env_config', to: 'custom_api/system_prompts#update_env_config'
+  # --- END: Your Custom API Routes ---
+
+  # Routes for AI Service Management
+  get '/custom_api/ai_status', to: 'custom_api/system_prompts#ai_status'
+  post '/custom_api/restart_ai', to: 'custom_api/system_prompts#restart_ai'
+  # --- END: Your Custom API Routes for Penguin Dashboard ---
+
   # AUTH STARTS
   mount_devise_token_auth_for 'User', at: 'auth', controllers: {
     confirmations: 'devise_overrides/confirmations',
